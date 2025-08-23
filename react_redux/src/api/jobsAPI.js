@@ -7,7 +7,7 @@ const API = axios.create({
 // Public
 export const fetchJobsAPI = async (filters) => {
   const response = await axios.get('/api/jobs', { params: filters });
-  console.log("API Response:", response.data);  // 👈 ఇదే sample JSON
+  console.log("API Response:", response.data);  // 👈 sample JSON
   return response.data;
 };
 
